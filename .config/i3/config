@@ -175,8 +175,8 @@ bindsym  XF86MonBrightnessUp exec "xbacklight -inc 2"
 
 ## Volume
 bindsym  XF86AudioMute exec "~/scripts/audio.sh"
-bindsym  XF86AudioRaiseVolume exec "amixer -q set Master 3+ unmute"
-bindsym  XF86AudioLowerVolume exec "amixer -q set Master 3- unmute"
+bindsym  XF86AudioRaiseVolume exec "amixer -c 0 -q set Master 3+ unmute"
+bindsym  XF86AudioLowerVolume exec "amixer -c 0 -q set Master 3- unmute"
 
 ## Primary to Clipboard
 bindsym $mod+c exec --no-startup-id xsel | xsel -b
