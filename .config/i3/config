@@ -185,3 +185,7 @@ bindsym $mod+c exec --no-startup-id xsel | xsel -b
 bindsym Print exec "scrot -e 'mv $f ~/pictures/screenshots/'"
 bindsym Shift+Print exec "sleep 0.2; scrot -s -e 'mv $f ~/pictures/screenshots/'"
 bindsym Control+mod1+l exec i3lock
+
+# My second monitor
+bindsym $mod+m exec "xrandr --output DP1 --auto --left-of eDP1 --rotate left"
+bindsym Shift+$mod+m exec "xrandr --output DP1 --off"
