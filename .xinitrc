@@ -38,6 +38,9 @@ export TERMINAL="tmux"
 xset b off
 xset b 0 0 0
 
+# Keyboard config
+setxkmap us -variant altgr-intl
+
 # For logging
 # exec i3 -V >> ~/i3log-$(date +'%F-%k-%M-%S') 2>&1
 
